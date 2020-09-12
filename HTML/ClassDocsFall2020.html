@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Fall 2020 School Files</title>
+		<link rel="shortcut icon" href="../Documents/Pictures/Icons/RAM.ico" />
+		<meta charset="UTF-8">
+		<meta name="author" content="Liam English-Birge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="refresh" content="100">
+
+		<script src="../JS/COScript.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="../CSS/style.css" type="text/css" />
+		<style type="text/css">
+			@media screen and (max-width: 800px) {
+				header {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-content: flex-start;
+					width:100%;
+					height:200px;
+					margin-bottom:-30px;
+				}
+				header h1{
+					width:100%;
+					font-size: 28px;
+					margin-top:5px;
+				}
+				button#backButton{
+					min-width:70px;
+					min-height:50px;
+					margin-left:50%;
+					margin-right:50%;
+					align-self: center;
+				}
+				div#termNav{
+					align-self: center;
+					margin-left:50%;
+					margin-right:50%;
+				}
+				#termNav button{
+					min-width:50px;
+					min-height:50px;
+				}
+			}
+			#container{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+			#liamLinks{
+				align-self: center;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div id="termNav">
+				<button onclick="gotoSame('ClassDocsFall2018.html')"><</button>
+				<button disabled="disabled">></button>
+			</div>
+			<h1>Class Websites and Rescources For Fall 2020</h1>
+			<button id="backButton" onclick="gotoSame('index1.html')">BACK</button>
+			<hr />
+		</header>
+		<section>
+			<div id="genLinks">
+				<h4><u>General Links</u></h4>
+				<hr />
+				<div id="links">
+					<a onclick="gotoNew('https://bright.uvic.ca/d2l/home')">
+						BrightSpaces
+					</a>
+					<a onclick="gotoNew('https://www.uvic.ca/mypage/')">
+						My Page
+					</a>
+					<a onclick="gotoNew('www.uvic.ca')">
+						UVic Home
+					</a>
+					<a onclick="gotoNew('https://www.uvic.ca/mypage/render.userLayoutRootNode.uP?uP_fname=onecardaccount')">
+						One Card
+					</a>
+					<a onclick="gotoNew('https://webmailng.uvic.ca/?_task=mail&_mbox=INBOX')">
+						UVic WebMail
+					</a>
+					<a onclick="gotoNew('')">
+						Winter Exams
+					</a>
+					<a onclick="linkCal()">
+						Calendar
+					</a>
+				</div>
+			</div>
+			<div id="container">
+			<div id="liamLinks">
+			<h4><u>Liam's Links</u></h4>
+			<ol>
+				<li>Miscellaneous:</li>
+				<ul class="sideList">
+					<li>
+						<a href="../../../Work/Liam_resume_2018.pdf" target="_blank">
+							Resume
+						</a><type>PDF</type>
+					</li>
+					<li>
+						<a href="https://citationsy.com/styles/the-biological-bulletin" target="_blank">
+							Biological Bulletin Citation Style Reference
+						</a>
+					</li>
+				</ul>
+				<hr />
+				<li>
+					Organic Chemistry 234
+					<teacher>Teacher: Harmen Zijlstra</teacher>
+				</li>
+				<ul class="sideList">
+					<li>
+						<a href="https://bright.uvic.ca/d2l/home/51928"  target="_blank">
+							Course Page
+						</a>
+					</li>
+					<li>
+						<a href="../Documents/Fall2020/Chem234/Syllabus.pdf" target="_blank">Course Syllabus</a>
+					</li>
+					<li>
+						<a href="https://uvic.zoom.us/j/99337589849?pwd=U0pqSmMwOGYxU2UyM21QZnlpbUhHdz09" target="_blank">
+							Zoom Room
+						</a>
+					</li>
+					<li>
+						<a href="http://www.wileyplus.com/class/781445" target="_blank">
+							WileyPlus
+						</a>
+					</li>
+				</ul>
+				<hr />
+				<li>
+					Biology 215
+					<teacher>Teacher: T. E. Reimchen</teacher>
+				</li>
+				<ul class="sideList">
+					<li>
+						<a href="https://bright.uvic.ca/d2l/home/52182" target="_blank">
+							Course Page
+						</a>
+					</li>
+					<li>
+						<a href="https://uvic.zoom.us/j/99653157124?pwd=bXhHRXJucFgxZTRKc0VMTGl5R1hzdz09"  target="_blank">
+							Zoom Room
+						</a>
+					</li>
+					<li>
+						<a href="../Documents/Fall2020/Bio215/Syllabus.pdf" target="_blank">
+							Course Syllabus
+						</a><type>PDF</type>
+					</li>
+				</ul>
+				<hr />
+				<li>
+					Biology 355
+					<teacher>Teacher: The teacher? </teacher>
+				</li>
+				<ul class="sideList">
+					<li>
+						<a href="https://bright.uvic.ca/d2l/home/52224" target="_blank">
+							Course Page
+						</a>
+					</li>
+					<li>
+						<a href="../Documents/Fall2020/Bio355/Syllabus.pdf" target="_blank">
+							Course Syllabus
+						</a><type>PDF</type>
+					</li>
+					<li>
+						Documents:
+						<ul class="sideList">
+							<li>
+								<a href="https://bright.uvic.ca/d2l/le/content/52224/viewContent/609771/View" target="_blank">
+									Lecture 1 Video
+								</a><type>MP4</type>
+							</li>
+							<li>
+								<a href="https://bright.uvic.ca/d2l/le/content/52224/viewContent/604865/View" target="_blank">
+									Lecture 1 Slides
+								</a><type>PPTX</type>
+							</li>
+							<li>
+								<a href="https://bright.uvic.ca/d2l/le/content/52224/viewContent/619181/View" target="_blank">
+									Lecture 2 Video
+								</a><type>MP4</type>
+							</li>
+							<li>
+								<a href="https://bright.uvic.ca/d2l/le/content/52224/viewContent/619179/View" target="_blank">
+									Lecture 2 Slides
+								</a><type>PPTX</type>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<hr />
+				<li>
+					Anthropology 250
+					<teacher>Teacher: Sarah-Louise Decrausaz</teacher>
+				</li>
+				<ul class="sideList">
+					<li>
+						<a href="https://bright.uvic.ca/d2l/home/84058" target="_blank">
+							Course Page
+						</a>
+					</li>
+					<li>
+						<a href="../Documents/Fall2020/Anth250/Syllabus.pdf" target="_blank">
+							Course Syllabus
+						</a><type>PDF</type>
+					</li>
+				</ul>
+			</ol>
+		</div>
+		</div>
+		</section>
+		<footer>
+			<div class="footerText">
+				<p>
+					<author>Liam English-Birge</author> 
+					&nbsp;&nbsp;
+					Last Updated: <date>9/11/20</date>
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

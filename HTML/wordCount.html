@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Word Counter</title>
+		<link rel="shortcut icon" href="../Documents/Pictures/Icons/RAM.ico" />
+		<meta charset="UTF-8">
+		<meta name="author" content="Liam English-Birge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<script src="../JS/COScript.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="../CSS/style.css" type="text/css" />
+		<style type="text/css">
+			#textArea{
+				height:300px;
+				width:97%;
+			}
+		</style>
+		<script type="text/javascript">
+			function setup(){
+				document.querySelector('span').textContent = getWordCount(document.querySelectorAll('textarea').value);
+			}
+			function getWordCount(nodeList){
+				var counter = 0;
+				for (var i = 0; i < nodeList.length; i++){
+					if (nodeList.charAt(i) == " ") {
+				        counter ++;
+				    }
+				}
+				return counter + 1;
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<h2>Word Counter</h2>
+			<button onclick="gotoSame('../HTML/ClassOrganization2.html')">BACK</button>
+			<hr />
+		</header>
+		<section>
+			<textarea id="textArea"></textarea>
+			<button onclick="setup()">Get Word Count</button>
+			Word Count: <span></span>
+		</section>
+	</body>
+</html>

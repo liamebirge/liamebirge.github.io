@@ -1,0 +1,119 @@
+<html lang="en">
+	<head>
+		<title>Grades</title>
+		<link rel="shortcut icon" href="../Documents/Pictures/Icons/RAM.ico" />
+		<meta charset="UTF-8">
+		<meta name="author" content="Liam English-Birge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<script src="../JS/COScript.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="../CSS/style.css" type="text/css" />
+		<style type="text/css">
+			input[type=text]{
+				margin:0px;
+				padding:0px;
+				margin-left:2px;
+				margin-right:2px;
+				margin-bottom:3px;
+				width:20%;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Grades</h1>
+			<button onclick="gotoSame('usefulThings.html')">BACK</button>
+			<hr />
+		</header>
+		<section>
+			<div id="grades">
+				<form action="">
+					<fieldset>
+						<legend>Class #1</legend>
+						<input type="text" name="className1" placeholder="Class Name" /><br />
+						<ul id="class1">
+							<li>
+								<input type="text" class="score" name="class1grade1" placeholder="Score" />
+								<input type="text" class="total" name="class1grade1" placeholder="Total Possible Score" />
+								<input type="text" name="class1assign1" placeholder="Assignment Name" />
+								<input type="text" class="weight" name="class1weight1" placeholder="Weight (omit % sign)" />
+							</li>
+						</ul>
+						Average: <div id="class1Av"></div><br />
+						<input type="button" onclick="newGrade(1)" value="Add Grade" />
+						<input type="button" onclick="calcAv(1)" value="Calculate Average" /><br />
+					</fieldset>
+					<fieldset>
+						<legend>Class #2</legend>
+						<input type="text" name="className2" placeholder="Class Name" /><br />
+						<ul id="class2">
+							<li>
+								<input type="text" class="score" name="class2grade1" placeholder="Score" />
+								<input type="text" class="total" name="class2grade1" placeholder="Total Possible Score" />
+								<input type="text" name="class2assign1" placeholder="Assignment Name" />
+								<input type="text" class="weight" name="class2weight1" placeholder="Weight (omit % sign)" />
+							</li>
+						</ul>
+						Average: <div id="class2Av"></div><br />
+						<input type="button" onclick="newGrade(2)" value="Add Grade" />
+						<input type="button" onclick="calcAv(2)" value="Calculate Average" /><br />
+					</fieldset>
+					<fieldset>
+						<legend>Class #3</legend>
+						<input type="text" name="className3" placeholder="Class Name" /><br />
+						<ul id="class3">
+							<li>
+								<input type="text" class="score" name="class3grade1" placeholder="Score" />
+								<input type="text" class="total" name="class3grade1" placeholder="Total Possible Score" />
+								<input type="text" name="class3assign1" placeholder="Assignment Name" />
+								<input type="text" class="weight" name="class3weight1" placeholder="Weight (omit % sign)" />
+							</li>
+						</ul>
+						Average: <div id="class3Av"></div><br />
+						<input type="button" onclick="newGrade(3)" value="Add Grade" />
+						<input type="button" onclick="calcAv(3)" value="Calculate Average" /><br />
+					</fieldset>
+					<fieldset>
+						<legend>Class #4</legend>
+						<input type="text" name="className4" placeholder="Class Name" /><br />
+						<ul id="class4">
+							<li>
+								<input type="text" class="score" name="class4grade1" placeholder="Score" />
+								<input type="text" class="total" name="class4grade1" placeholder="Total Possible Score" />
+								<input type="text" name="class4assign1" placeholder="Assignment Name" />
+								<input type="text" class="weight" name="class4weight1" placeholder="Weight (omit % sign)" />
+							</li>
+						</ul>
+						Average: <div id="class4Av"></div><br />
+						<input type="button" onclick="newGrade(4)" value="Add Grade" />
+						<input type="button" onclick="calcAv(4)" value="Calculate Average" /><br />
+					</fieldset>
+					<fieldset>
+						<legend>Class #5</legend>
+						<input type="text" name="className5" placeholder="Class Name" /><br />
+						<ul id="class5">
+							<li>
+								<input type="text" class="score" name="class5grade1" placeholder="Score" />
+								<input type="text" class="total" name="class5grade1" placeholder="Total Possible Score" />
+								<input type="text" name="class5assign1" placeholder="Assignment Name" />
+								<input type="text" class="weight" name="class5weight1" placeholder="Weight (omit % sign)" />
+							</li>
+						</ul>
+						Average: <div id="class5Av"></div><br />
+						<input type="button" onclick="newGrade(5)" value="Add Grade" />
+						<input type="button" onclick="calcAv(5)" value="Calculate Average" /><br />
+					</fieldset>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<div class="footerText">
+				<p>
+					<author>Liam English-Birge</author> 
+					&nbsp;&nbsp;
+					Last Updated: <date>11/10/17</date>
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

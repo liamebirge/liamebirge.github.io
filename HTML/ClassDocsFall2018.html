@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Fall 2018 School Files</title>
+		<link rel="shortcut icon" href="../Documents/Pictures/Icons/RAM.ico" />
+		<meta charset="UTF-8">
+		<meta name="author" content="Liam English-Birge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="refresh" content="100">
+
+		<script src="../JS/COScript.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="../CSS/style.css" type="text/css" />
+		<style type="text/css">
+			@media screen and (max-width: 800px) {
+				header {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-content: flex-start;
+					width:100%;
+					height:200px;
+					margin-bottom:-30px;
+				}
+				header h1{
+					width:100%;
+					font-size: 28px;
+					margin-top:5px;
+				}
+				button#backButton{
+					min-width:70px;
+					min-height:50px;
+					margin-left:50%;
+					margin-right:50%;
+					align-self: center;
+				}
+				div#termNav{
+					align-self: center;
+					margin-left:50%;
+					margin-right:50%;
+				}
+				#termNav button{
+					min-width:50px;
+					min-height:50px;
+				}
+			}
+			#container{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+			#liamLinks{
+				align-self: center;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div id="termNav">
+				<button onclick="gotoSame('ClassOrganization2.html')"><</button>
+				<button onclick="gotoSame('ClassDocsFall2020.html')">></button>
+			</div>
+			<h1>Class Websites and Rescources For Fall 2018</h1>
+			<button id="backButton" onclick="gotoSame('index1.html')">BACK</button>
+			<hr />
+		</header>
+		<section>
+			<div id="genLinks">
+				<h4><u>General Links</u></h4>
+				<hr />
+				<div id="links">
+					<a onclick="gotoNew('https://coursespaces.uvic.ca/my/')">
+						Course Spaces
+					</a>
+					<a onclick="gotoNew('https://www.uvic.ca/mypage/')">
+						My Page
+					</a>
+					<a onclick="gotoNew('www.uvic.ca')">
+						UVic Home
+					</a>
+					<a onclick="gotoNew('https://www.uvic.ca/mypage/render.userLayoutRootNode.uP?uP_fname=onecardaccount')">
+						One Card
+					</a>
+					<a onclick="gotoNew('https://webmailng.uvic.ca/?_task=mail&_mbox=INBOX')">
+						UVic WebMail
+					</a>
+					<a onclick="gotoNew('')">
+						Winter Exams
+					</a>
+					<a onclick="linkCal()">
+						Calendar
+					</a>
+				</div>
+			</div>
+			<div id="container">
+			<div id="liamLinks">
+			<h4><u>Liam's Links</u></h4>
+			<ol>
+				<li>Miscellaneous:</li>
+				<ul class="sideList">
+					<li>
+						<a href="../../../Work/Liam_resume_2018.pdf" target="_blank">
+							Resume
+						</a><type>PDF</type>
+					</li>
+					<li>
+						<a href="https://www.uvic.ca/library/research/citation/documents/APA.pdf" target="_blank">
+							APA Style Guide
+						</a>
+					</li>
+				</ul>
+				<hr />
+				<li>
+					Chemistry 11
+					<teacher>Teacher: Mike Greenwood</teacher>
+				</li>
+				<ul class="sideList">
+					<li>
+						<a href="http://bit.ly/2gM3t1V" target="_blank">
+							Course Dashboard
+						</a>
+					</li>
+					<li>
+						<a href="https://adultcontinuinged.wordpress.com"  target="_blank">
+							Course Website
+						</a>
+					</li>
+					<li>
+						<a href="../../../School/Year2/Chem11/Course Outline.pdf" target="_blank">Course Outline</a>
+					</li>
+					<li>
+						Documents:
+						<ul class="sideList">
+							<li>
+								<a href="https://docs.google.com/document/d/16RERLIhkXmfvwF6trgl_tgjJIBEQ1onCqK7IawiJ5Lo/edit" target="_blank">Lab Report Outline
+									<br />
+								</a><type>Google Doc</type>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Rescources:
+						<ul class="sideList">
+							<li>
+								<a href="../../../School/Year2/Chem11/Data Package.pdf" target="_blank">
+									Data Package
+								</a><type>PDF</type>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<hr />
+				<li>
+					Biology 150A
+					<teacher>Teacher: Dr. Gregory Beaulieu (September-October) - Dr. Barbara Ehlting (October-End Of Term)</teacher>
+				</li>
+				<ul class="sideList">
+					<li>
+						<a href="https://coursespaces.uvic.ca/course/view.php?id=54266" target="_blank">
+							Main Page
+						</a>
+					</li>
+					<li>
+						<a href="https://coursespaces.uvic.ca/course/user.php?mode=grade&id=54266&user=82629"  target="_blank">
+							Grades
+						</a>
+					</li>
+					<li>
+						<a href="../../../School/Year2/Bio150A/Course Outline.pdf" target="_blank">
+							Course Outline
+						</a><type>PDF</type>
+					</li>
+					<li>
+						Greg's Notes:
+						<ul class="sideList">
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/GregoryBeaulieuNotes/Topic-1 Three Things.pdf" target="_blank">Three Things
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/GregoryBeaulieuNotes/Topic-2 History of Life.pdf" target="_blank">History Of Life
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/GregoryBeaulieuNotes/Topic-3 Mitosis, Meiosis and Sexual Life Cycles.pdf" target="_blank">Mitosis, Meiosis, and Sexual Life Cycles</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/GregoryBeaulieuNotes/Topic-4 Genetics.pdf" target="_blank">
+									Genetics
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/GregoryBeaulieuNotes/Topic-5 Introduction to Evolution.pdf">
+									Intro To Evolution
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/GregoryBeaulieuNotes/Topic-6 How Evolution Works.pdf" target="_blank">
+									How Evolution Works
+								</a><type>PDF</type>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Barbara's Notes
+						<ul class="sideList">
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/BarbraElthingNotes/Topic-1 Prokaryotes.pdf" target="_blank">
+									Prokaryotes
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/BarbraElthingNotes/Topic-2 Protists.pdf" target="_blank">
+									Protists
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/BarbraElthingNotes/Topic-3 Fungi.pdf" target="_blank">
+									Fungi
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/BarbraElthingNotes/Topic-4 Plants.pdf" target="_blank">
+									Plants
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/BarbraElthingNotes/Topic-5 Animals-Invertebrates.pdf" target="_blank">
+									Animals-Invertebrates Part 1
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/BarbraElthingNotes/Topic-5B Animals-Invertebrates.pdf" target="_blank">
+									Animals-Invertebrates Part 2
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/BarbraElthingNotes/Topic-6 Ecology.pdf" target="_blank">
+									Ecology
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/BarbraElthingNotes/Topic-7 BehaviorEcology.pdf" target="_blank">
+									Behavior Ecology
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/BarbraElthingNotes/Topic-8 PopulationEcology.pdf" target="_blank">
+									Population Ecology
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/BarbraElthingNotes/Topic-9 CommunitiesEcosystems.pdf" target="_blank">
+									Communities Ecosystems
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/BarbraElthingNotes/Topic-10 Conservation.pdf" target="_blank">
+									Conservation
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/BarbraElthingNotes/Review of Diversity.pdf" target="_blank">
+									Review of Diversity
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Slides/BarbraElthingNotes/Review of Ecology.pdf" target="_blank">
+									Review of Ecology
+								</a><type>PDF</type>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Example Tests
+						<ul class="sideList">
+							<li>
+								<a href="../../../School/Year2/Bio150A/Test Examples/Midterm 1.pdf" target="_blank">
+									Review of Diversity
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Test Examples/Midterm 2.pdf" target="_blank">
+									Review of Diversity
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Bio150A/Test Examples/Final.pdf" target="_blank">
+									Review of Diversity
+								</a><type>PDF</type>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<hr />
+				<li>
+					Physics 102A
+					<teacher>Teacher: Stephanie LaForest, TA: </teacher>
+				</li>
+				<ul class="sideList">
+					<li>
+						<a href="https://coursespaces.uvic.ca/course/view.php?id=53074" target="_blank">
+							Main Page
+						</a>
+					</li>
+					<li>
+						<a href="https://coursespaces.uvic.ca/course/user.php?mode=grade&id=53074&user=82629"  target="_blank">
+							Grades
+						</a>
+					</li>
+					<li>
+						<a href="../../../School/Year2/Physics102A/Syllabus.pdf" target="_blank">
+							Syllabus
+						</a><type>PDF</type>
+					</li>
+					<li>
+						<a href="../../../School/Year2/Physics102A/Course Outline.pdf" target="_blank">
+							Course Outline
+						</a><type>PDF</type>
+					</li>
+					<li>
+						<a href="https://www.webassign.net/v4cgi/student.pl?action=&course=&UserPass=c888ca762d18185dd3682d854347b1cf" target="_blank">
+							Webassign
+						</a>
+					</li>
+					<li>
+						Documents:
+						<ul class="sideList">
+							<li>
+								<a href="../../../School/Year2/Physics102A/Slides/Week 1.pdf" target="_blank">Week 1 Slides
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Physics102A/Slides/Week 2.pdf" target="_blank">
+									Week 2 Slides
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Physics102A/Slides/Week 3.pdf" target="_blank">
+									Week 3 Slides
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Physics102A/Slides/Week 4.pdf" target="_blank">
+									Week 4 Slides
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Physics102A/Slides/Week 5.pdf" target="_blank">
+									Week 5 Slides
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Physics102A/Slides/Week 6.pdf" target="_blank">
+									Week 6 Slides
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Physics102A/Slides/Week 7.pdf" target="_blank">
+									Week 7 Slides
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Physics102A/Slides/Week 8 and 9.pdf" target="_blank">
+									Weeks 8-9 Slides
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Physics102A/Slides/Week 10 and 11.pdf" target="_blank">
+									Weeks 10-11 Slides
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Physics102A/Slides/Week 12.pdf" target="_blank">
+									Week 12 Slides
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Physics102A/Slides/Week 13.pdf" target="_blank">
+									Week 13 Slides
+								</a><type>PDF</type>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Rescources:
+						<ul class="sideList">
+							<li>
+								<a href="../../../School/Year2/Physics102A/equationSheetFinalExam.pdf" target="_blank">
+									Final Exam Formula Sheet
+								</a>
+							</li>
+							<li>
+								<a href="https://www.khanacademy.org/science/physics/one-dimensional-motion" target="_blank">
+									Khan Academy
+								</a>
+							</li>
+							<li>
+								<a href="https://web2.0calc.com/" target="_blank">
+									Scientific Calculator
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<hr />
+				<li>
+					Math 109
+					<teacher>Teacher: Josh Manzer, TA: </teacher>
+				</li>
+				<ul class="sideList">
+					<li>
+						<a href="https://coursespaces.uvic.ca/course/view.php?id=53880" target="_blank">
+							Main Page
+						</a>
+					</li>
+					<li>
+						<a href="https://coursespaces.uvic.ca/course/user.php?mode=grade&id=53880&user=82629"  target="_blank">
+							Grades
+						</a>
+					</li>
+					<li>
+						<a href="../../../School/Year2/Math109/Course Documents/CourseOutline.pdf" target="_blank">
+							Course Outline
+						</a><type>PDF</type>
+					</li>
+					<li>
+						<a href="https://portal.mypearson.com/course-home#/tab/active" target="_blank">
+							My Math Lab
+						</a>
+					</li>
+					<li>
+						Rescources:
+						<ul class="sideList">
+							<li>
+								<a href="https://www.desmos.com/calculator" target="_blank">
+									Graphing Calculator
+								</a>
+							</li>
+							<li>
+								<a href="https://www.symbolab.com/" target="_blank">
+									SymboLab
+								</a>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Math109/Course Documents/HandbookPracticeExams.pdf" target="_blank">
+									Handbook Practice Exams
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Math109/FinalExamReview.pdf" target="_blank">
+									Final Exam Practice
+								</a><type>PDF</type>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Handouts:
+						<ul class="sideList">
+							<li>
+								<a href="../../../School/Year2/Math109/Handouts/Asymptotes.pdf" target="_blank">
+									Asymptotes
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Math109/Handouts/Continuity.pdf" target="_blank">
+									Continuity
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Math109/Handouts/Differentiation Formulas.pdf" target="_blank">
+									Differentiation Formulas
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Math109/Handouts/Differentiation Rules.pdf" target="_blank">
+									Differentiation Rules
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Math109/Handouts/Guidelines for Curve Sketching.pdf" target="_blank">
+									Guidelines for Curve Sketching
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Math109/Handouts/Integraion Formulas.pdf" target="_blank">
+									Integraion Formulas
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Math109/Handouts/Optimization.pdf" target="_blank">
+									Optimization
+								</a><type>PDF</type>
+							</li>
+							<li>
+								<a href="../../../School/Year2/Math109/Handouts/Related Rates.pdf" target="_blank">
+									Related Rates
+								</a><type>PDF</type>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</ol>
+		</div>
+		</div>
+		</section>
+		<footer>
+			<div class="footerText">
+				<p>
+					<author>Liam English-Birge</author> 
+					&nbsp;&nbsp;
+					Last Updated: <date>12/13/18</date>
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

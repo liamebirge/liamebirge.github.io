@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="" content="text/html; charset=UTF-8">
+		<link rel="shortcut icon" href="../Documents/Pictures/Icons/RAM.ico" />
+		<script src="../JS/COScript.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="../CSS/style.css" type="text/css" />
+		<title>Main Page</title>
+		<script type="text/javascript">
+			function clock() {
+				var time = new Date();
+    
+  				var hours = time.getHours();
+  				var minutes = time.getMinutes();
+  				var seconds = time.getSeconds();
+  				var amORpm = "am";
+
+				document.querySelectorAll('.clock')[0].innerHTML = tfTOt(hours) + ":" + check(minutes) + ":" + check(seconds) + amORpm;
+  
+  				function check(temp) {
+    				if (temp < 10) {
+      					temp = '0' + temp;
+    				} return temp;
+  				}
+  				function tfTOt(hour){
+  					var twentyFour = false;
+  					if (hour > 12 && !twentyFour){
+  						hour = hour - 12;
+  						amORpm = "pm";
+  					} else amORpm = ""; 
+  					return hour;
+  				}
+			}
+			setInterval(clock, 1000);
+		</script>
+	</head>
+	<body>
+		<header class="mainPHead">
+			<h1>Main Page</h1>
+			<button onclick="gotoSame('../index.html')">BACK</button>
+			<hr />
+		</header>
+		<section class="mainPSec">
+			<div class="links">
+				<h3><u>Links</u></h3>
+				<button onclick="gotoSame('ClassDocsFall2020.html')">
+					Class Rescources
+				</button>
+				<button onclick="gotoNew('https://www.uvic.ca/mypage/f/student-services/p/student-services.u27l1n9/max/render.uP#banuvic.pkg_transcript_web.StuViewTrans')">
+					Grades
+				</button>
+				<button onclick="gotoSame('rentLinks.html')">
+					Parent Links
+				</button>
+				<button onclick="gotoNew('https://darksky.net/forecast/48.4283,-123.3649/ca12/en')">
+					Weather
+				</button>
+				<button onclick="gotoNew('http://ebirgephotography.weebly.com/')">
+					Online Photography Portfolio
+				</button>
+				<button onclick="gotoNew('http://liamebdesign.weebly.com/')">
+					Online Design Portfolio
+				</button>
+				<button onclick="gotoNew('https://liamebirge.github.io/Online-R/index.html')">
+					Online Resume
+				</button>
+				<button onclick="gotoSame('usefulThings.html')">
+					Useful Things
+				</button>
+				<button onclick="gotoSame('FreeTime.html')">
+					Free Time
+				</button>
+			</div>
+			<div class="clock"></div>
+		</section>
+		<footer>
+			<div class="footerText">
+				<p>
+					<author>Liam English-Birge</author> 
+					&nbsp;&nbsp; 
+					Last Updated: <date>9/11/20</date>
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

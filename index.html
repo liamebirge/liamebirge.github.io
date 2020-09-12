@@ -1,0 +1,93 @@
+<html lang="en">
+	<head>
+		<title>Index</title>
+		<link rel="shortcut icon" href="Documents/Pictures/Icons/RAM.ico" />
+		<script src="JS/COScript.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+		<style type="text/css">
+			#homePage #sites{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				flex-wrap: wrap;
+				align-items: center;
+			}
+			#sites iframe{
+				height:400px;
+				width:60%;
+				min-width:500px;
+				margin:10px;
+				padding-bottom:5px;
+				border:2px solid grey;
+				border-radius: 4px;
+			}
+			/*#sites button:hover, img:hover{
+				opacity: 0.7;
+			}
+			#sites button:active{
+				opacity: 0.4;
+			}
+			button img{
+				height:150px;
+				width:auto;
+				margin:2px;
+			}*/
+			header h2{
+				text-align: center;
+			}
+			/*#lnk1{
+				background-image:url(Documents/Pictures/MainPage/personalWebsite.PNG);
+				background-size: cover;
+			}
+			#lnk2{
+				background-image:url(Documents/Pictures/MainPage/alienPlants.PNG);
+				background-size: cover;
+			}
+			#lnk3{
+				background-image:url(Documents/Pictures/MainPage/SchoolWebsite.PNG);
+				background-size: cover;
+			}
+			#lnk4{
+				background-image:url(Documents/Pictures/MainPage/dogWebsite.PNG);
+				background-size: cover;
+			}
+			#lnk5{
+				background-image:url(Documents/Pictures/MainPage/antiques.PNG);
+				background-size: cover;
+			}*/
+			nav{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				flex-wrap: nowrap;
+			}
+			header{
+				margin-bottom: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>LiamEBirge Index</h1>
+			<h2><u>Sites</u></h2>
+			<hr />
+			<nav>
+				<a href="HTML/index1.html" target="_self">School Website</a>
+				<a href="https://liamebirge.github.io/alienPlants/" target="_self">Plant Website</a>
+				<a href="https://liamebirge.github.io/DigitalHumanitiesFinal/" target="_self">Antique Archive</a>
+				<a href="https://liamebirge.github.io/dogWalking/" target="_self">"Company" Website</a>
+				<a href="http://web.uvic.ca/~liamenglishbirge/" target="_self">UVic Webspace</a>
+			</nav>
+			<hr />
+		</header>
+		<section id="homePage">
+			<div id="sites">
+				<iframe src="HTML/index1.html"></iframe>
+				<iframe src="https://liamebirge.github.io/alienPlants/"></iframe>
+				<iframe src="https://liamebirge.github.io/DigitalHumanitiesFinal/"></iframe>
+				<iframe src="https://liamebirge.github.io/dogWalking/"></iframe>
+				<iframe src="https://web.uvic.ca/~liamenglishbirge/DigHum/Final%20Project/index.html"></iframe>
+			</div>
+		</section>
+	</body>
+</html>

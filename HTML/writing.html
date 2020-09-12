@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Write Space</title>
+		<link rel="shortcut icon" href="../Documents/Pictures/Icons/RAM.ico" />
+		<meta charset="UTF-8">
+		<meta name="author" content="Liam English-Birge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<script src="../JS/COScript.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="../CSS/style.css" type="text/css" />
+		<style type="text/css">
+			body{
+				min-width: 600px;
+			}
+			section{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+			button{
+				width:70px;
+			}
+			.textHere textarea{
+				width:400px;
+				height:300px;
+			}
+			#leftSide .buttonsHere{
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-content: center;
+				margin:0px;
+				padding:0px;
+			}
+			.buttonsHere button{
+				margin:2px;
+			}
+			#rightSide{
+				width:50%;
+				margin:10px;
+			}
+			#noteContent{
+				height:550px;
+				width: 100%;
+				min-width: 300px;
+				border:2px solid black;
+				border-radius: 3px;
+				padding:3px;
+			}
+		</style>
+		<script type="text/javascript">
+			var scrolled = false;
+			function updateScroll(){
+				var element = document.getElementById("noteContent");
+    			if(!scrolled){
+        			element.scrollTop = element.scrollHeight;
+    			}
+    			element.on('scroll', function(){
+    				scrolled = true;
+				});
+			}
+			setInterval(updateScroll, 100);
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1><u>Write Notes or Code Here</u></h1>
+			<button onclick="gotoSame('usefulThings.html')">BACK</button>
+			<hr />
+		</header>
+		<section>
+			<div id="leftSide">
+				<div class="textHere">
+					<textarea id="theText" placeholder="html code works!"></textarea>
+				</div>
+				<div class="buttonsHere">
+					<button id="bttn1" onclick="postText()">POST</button>
+					<button id="bttn1" onclick="appendText()">APPEND</button>
+					<button id="bttn2" onclick="clearText()">CLEAR</button>
+					<button id="bttn3" onclick="saveText()">SAVE</button>
+					<!--<button id="bttn4" onclick="populateTA()">OPEN</button><input id="filechoice" type="file" placeholder="Path To Text File" />-->
+				</div>
+			</div>
+			<div id="rightSide">
+				<div id="noteContent" style="overflow-y:scroll;"></div>
+			</div>
+		</section>
+	</body>
+</html>

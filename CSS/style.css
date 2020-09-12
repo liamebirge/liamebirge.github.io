@@ -1,0 +1,207 @@
+body{
+	min-width:580px; 
+}
+header{
+	display: block;
+	float:top;
+	height:50px;
+	width:100%;
+	min-width:580px; 
+}
+header h1{
+	text-align: center;
+}
+a{
+	color:grey;
+}
+a:hover{
+	color:black;
+	text-decoration-color: red;
+}
+section{
+	display:block;
+	width:100%;
+	padding-bottom:50px;
+	margin-top:50px;
+	min-height: 450px;
+	min-width:580px; 
+}
+footer{
+	position: relative;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1em;
+	background-color: #efefef;
+	text-align: center;
+	height:50px;
+}
+#container hr{
+	margin-left: 0;
+	padding-left: 0;
+}
+ol li{
+	font-weight: bold;
+}
+section author, section sidenote, section teacher, section type{
+	font-size: 10px;
+	text-decoration: none;
+}
+#liamLinks{
+	display: inline-block;
+	float: left;
+	border:2px inset black;
+	border-radius: 4px;
+	padding:5px;
+	width:49%;
+}
+#liamLinks ol, #teyaLinks ol{
+	margin-left: -20px;
+}
+#liamLinks h4, #teyaLinks h4{
+	text-align: center;
+}
+button{
+	display:block;
+	border: 1px solid black;
+	border-radius: 2px;
+	color:black;
+	background:lightgrey;
+}
+button:hover{
+	border-color:red;
+	color:black;
+	background:white;
+}
+button:active, button:visited, button:focus{
+	border:darkred;
+	box-shadow: 0, 0, 0, darkred;
+}
+#teyaLinks{
+	display: inline-block;
+	float: right;
+	border:2px inset black;
+	border-radius: 4px;
+	padding:4px;
+	width:49%;
+	margin-left: 2%;
+}
+#links{
+	display: flex;
+	justify-content: space-around;
+}
+#genLinks h4{
+	margin:0px;
+	margin-top:3px;
+}
+#genLinks{
+	border:2px inset black;
+	border-radius: 4px;
+	padding:2px;
+	width:100%;
+	text-align: center;
+	margin-bottom: 3px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	min-width:580px; 
+}
+#links a{
+	text-align: center;
+	line-height:100%;
+	vertical-align: middle;
+	padding:10px;
+	margin:2px;
+	padding-top:10px;
+	border:1px solid black;
+	border-radius: 2px;
+	cursor:pointer;
+}
+#links a:hover{
+	border-radius: 8px;
+}
+#container{
+	display:flex;
+	justify-content: space-between;
+
+}
+.links button{
+	margin:10px;
+	width:150px;
+	padding:5px;
+	padding-left:2px;
+	padding-right:2px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.links{
+	display: block;
+	float:unset;
+	width:200px;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 3px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.weedLinks{
+	display: flex;
+	justify-content: center;
+}
+.mainPSec{
+	height:500px;
+}
+.clock {
+	display: block;
+	float:unset;
+	text-align: center;
+  	font-size: 3em;
+  	margin-top: 10px;
+  	margin-right: auto;
+  	margin-left: auto;
+}
+#extraLinks{
+	display: flex;
+	justify-content: space-around;
+	border:1px solid black;
+	border-radius: 3px;
+	width:500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.linkage{
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+img:hover{
+	border:1px solid darkred;
+	margin-bottom:-2px;
+}
+#websites{
+	text-align: center;
+	font-size: 15px;
+}
+.sideList{
+	padding-left: 10px;
+}
+#extraLinks button{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	width:170px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+#termNav{
+	display: block;
+	float: right;
+	display: flex;
+	flex-direction: row;
+}
+#termNav button{
+	width:50px;
+	height:50px;
+	padding:5px;
+	margin:5px;
+}
